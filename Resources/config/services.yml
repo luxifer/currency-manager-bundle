@@ -1,8 +1,16 @@
 parameters:
     luxifer.currency_manager.class: Luxifer\Manager\CurrencyManager
+    luxifer.currency_handler.class: Luxifer\Handler\CurrencyHandler
 
 services:
     currency_manager:
         class: "%luxifer.currency_manager.class%"
         arguments:
             - @jms_serializer
+
+    currency_handler:
+        class: "%luxifer.currency_handler.class%"
+        arguments:
+            - @currency_manager
+        tags:
+            - { name: jms_serializer.subscribing_handler }

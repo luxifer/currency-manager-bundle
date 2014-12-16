@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "luxifer/currency-manager": "~0.1",
+        "luxifer/currency-manager": "~0.2",
         "jms/serializer-bundle": "~0.11"
     },
     "autoload": {
