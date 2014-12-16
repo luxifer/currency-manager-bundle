@@ -1,0 +1,21 @@
+{
+    "name": "luxifer/currency-manager-bundle",
+    "description": "Symfony bundle to bridge luxifer/currency-manager",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florent Viel",
+            "email": "luxifer666@gmail.com",
+            "homepage": "http://blog.luxifer.fr",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "luxifer/currency-manager": "~0.1",
+        "jms/serializer-bundle": "~0.11"
+    },
+    "autoload": {
+        "psr-0": { "Luxifer\\CurrencyManagerBundle": "" }
+    },
+    "target-dir": "Luxifer/CurrencyManagerBundle"
+}

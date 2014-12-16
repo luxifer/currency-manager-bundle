@@ -1,0 +1,8 @@
+parameters:
+    luxifer.currency_manager.class: Luxifer\Manager\CurrencyManager
+
+services:
+    currency_manager:
+    class: "%luxifer.currency_manager.class%"
+    arguments:
+        - @jms_serializer
