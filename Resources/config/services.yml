@@ -3,6 +3,6 @@ parameters:
 
 services:
     currency_manager:
-    class: "%luxifer.currency_manager.class%"
-    arguments:
-        - @jms_serializer
+        class: "%luxifer.currency_manager.class%"
+        arguments:
+            - @jms_serializer
